@@ -22,9 +22,9 @@ console.log(foo.__proto__.constructor.prototype.name); // 输出 Bar
 
 ##总结
 1. Object.prototype.\_\_proto\_\_ => null
-2. `类/对象的原型对象`的`__proto__属性`指向其`父类的原型对象`
+2. `类/对象的原型对象`的`__proto__属性`指向其`父类的原型对象`  <br/>
    `类/对象的原型对象`的`constructor属性`指向`类/对象`本身
-3. `类/对象`的`__proto__属性`指向`Function.prototype`
+3. `类/对象`的`__proto__属性`指向`Function.prototype`  <br/>
    `类/对象`的`prototype属性`指向其`原型对象`
 4. `类/对象的实例`的`__proto__属性`指向`类/对象的原型`
 
