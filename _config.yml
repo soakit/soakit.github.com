@@ -6,8 +6,8 @@ pygments: true
 safe: true
 auto: false 
 
-paginator: 8
-paginator_path: "page:num"
+paginate: 8
+paginate_path: "page:num"
 
 # presonal config
 title: Soakit 's Blog
