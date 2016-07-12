@@ -2,9 +2,9 @@ markdown: redcarpet
 permalink: /:categories/:title.html
 url: 
 lsi: false
-highlighter: "pygments"
+pygments: true
 safe: true
-
+auto: false 
 
 jekyll-paginate: 8
 paginate_path: "page:num"
