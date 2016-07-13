@@ -1,7 +1,7 @@
 ---
 layout: post
 category: "HTML"
-title:  "office2010及以下的mime type"
+title:  "Office2010及以下的mime type"
 tags: [HTML]
 ---
 {% highlight bash %}
