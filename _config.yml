@@ -1,18 +1,17 @@
 markdown: redcarpet
+highlighter: pygments
 permalink: /:categories/:title.html
 url: 
 lsi: false
-pygments: true
-safe: true
-auto: false 
 
-paginate: 8
+paginate: 8 
 paginate_path: "page:num"
 
-# presonal config
 title: Soakit 's Blog
 description: Soakit's Blog, powered by Jekyll...
 author: Erko liu
+
+plugins: [jekyll-paginate]
 
 seo: 
   keyword: 

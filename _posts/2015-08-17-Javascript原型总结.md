@@ -4,6 +4,7 @@ category: "Javascript"
 title:  "Javascript原型总结"
 tags: [Javascript]
 ---
+
 ```javascript
 function Foo() {}
 Object.prototype.name = 'My Object';
