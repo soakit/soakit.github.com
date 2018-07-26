@@ -1,6 +1,21 @@
-  <!-- UY BEGIN -->
-  <div id="uyan_frame">
-  </div>
-  <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1511840">
-  </script>
-  <!-- UY END -->
+<!-- Gitalk 评论 start  -->
+
+<!-- Link Gitalk 的支持文件  -->
+<link href="https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.js"></script>
+<div id="gitalk-container"></div>
+<script type="text/javascript">
+	var gitalk = new Gitalk({
+		// gitalk的主要参数
+		clientID: `a11325b33fb2a02cba05`,
+		clientSecret: `c62656a372aa56d73753e7a67f2985acb5be4f22`,
+		repo: `https://github.com/soakit/soakit.github.com.git`,
+		owner: 'soakit',
+		admin: ['soakit'],
+		id: location.pathname
+
+	});
+	gitalk.render('gitalk-container');
+
+</script>
+<!-- Gitalk end -->
