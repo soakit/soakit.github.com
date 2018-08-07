@@ -7,15 +7,15 @@ tags: [Javascript]
 
 ```javascript
 function template(strArr, ...keys) {
-	return function(...values) {
-		var dict = values[values.length - 1] || {}
-		var result = [strArr[0]]
-		keys.forEach(function(key, i) {
-			var value = Number.isInteger(key) ? values[key] : dict[key]
-			result.push(value, strArr[i + 1])
-		})
-		return result.join('')
-	}
+  return function(...values) {
+    var dict = values[values.length - 1] || {}
+    var result = [strArr[0]]
+    keys.forEach(function(key, i) {
+      var value = Number.isInteger(key) ? values[key] : dict[key]
+      result.push(value, strArr[i + 1])
+    })
+    return result.join('')
+  }
 }
 ```
 
