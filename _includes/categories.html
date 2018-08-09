@@ -1,5 +1,8 @@
 <div class="col-lg-6">
 	<ul class="list-unstyled">
+		<li>
+			<a href="/categories.html">全部</a>
+		</li>
 		{% for cat in site.categories %}
 		<li>
 			<a href="/categories.html#{{ cat[0] }}">{{ cat[0] }}</a>
@@ -9,10 +12,11 @@
 </div>
 <script>
 	window.onload = window.onhashchange = function() {
-		if (location.pathname !== "/categories.html") {
+		var hash = location.hash
+		if (location.pathname !== "/categories.html" || !hash) {
 			return
 		}
-		var hash = location.hash.substr(1)
+		var hash = hash.substr(1)
 		var doms = document.querySelectorAll('.col-md-8>.list-unstyled>li')
 		var arr = Array.prototype.slice.call(doms, 0)
 		arr.forEach(element => {
