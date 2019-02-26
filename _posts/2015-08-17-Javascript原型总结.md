@@ -20,13 +20,12 @@ console.log(foo.__proto__.constructor.prototype.name) // 输出 Bar
 
 ## 图示
 
-<img src="https://static.panoramio.com.storage.googleapis.com/photos/medium/122612856.jpg">
+<img src="//lh3.googleusercontent.com/sAREhDVv0GRw1g8mJSMPPiJFfKQ2v8NfDLCws7Z-h0NQY7FmRnfnzywAQ00MVnNOFm2uNHDZWj0CAM9Mpw=w1407-h947-rw-no" width="100%">
 
 ## 总结
 
 1.  Object.prototype.\_\_proto\_\_ => null
-2.  `类/对象的原型对象`的`__proto__属性`指向其`父类的原型对象` <br/>
-    `类/对象的原型对象`的`constructor属性`指向`类/对象`本身
-3.  `类/对象`的`__proto__属性`指向`Function.prototype` <br/>
-    `类/对象`的`prototype属性`指向其`原型对象`
-4.  `类/对象的实例`的`__proto__属性`指向`类/对象的原型`
+2.  `构造函数的prototype`的`__proto__`指向其`父类的prototype` <br/>
+    `构造函数的prototype`的`constructor`指向`构造函数`本身
+3.  `构造函数`的`__proto__`指向`Function.prototype`
+4.  `构造函数的实例`的`__proto__`指向`构造函数的原型`
