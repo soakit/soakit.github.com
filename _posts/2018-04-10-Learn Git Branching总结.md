@@ -182,7 +182,7 @@ git branch bugWork HEAD^^2^
 # ^2 -> 第二个父提交
 # ^ -> 上一个节点
 
-# ^ 相当于 ~1(为1时可省略)，因此也可写成
+# ^ 相当于 ~1(为1时可省略1)，因此也可写成
 # git branch bugWork HEAD~^2~
 ```
 
@@ -255,6 +255,15 @@ git fakeTeamwork 1
 git commit
 git pull --rebase
 git push
+```
+
+8.锁定的master
+
+```shell
+# 先将当前的提交reset，再在当前的提交基础上建分支，推送到远程再提PR
+git reset --hard o/master
+git checkout -b feature c2
+git push origin feature
 ```
 
 #### 2.2 关于 origin 和它的周边 —— Git 远程仓库高级操作
