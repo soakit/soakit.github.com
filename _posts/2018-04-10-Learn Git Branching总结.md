@@ -157,7 +157,9 @@ tag 表示的是离 ref 最近的标签， numCommits 是表示这个 ref 与 ta
 
 当 ref 提交记录上有某个标签时，则只输出标签名称。
 
+```shell
 git commit
+```
 
 #### 1.5 高级话题
 
@@ -167,8 +169,26 @@ git commit
 git rebase master bugFix
 git rebase bugFix side
 git rebase side another
-git branch -f master another 2.两个父节点
-git branch bugWork HEAD~^2~ 3.纠缠不清的分支
+git branch -f master another
+```
+
+2.两个父节点
+
+操作符 ^ 与 ~ 符一样，后面也可以跟一个数字。但是^后面的数字与 ~ 后面的不同，并不是用来指定向上返回几代，而是指定合并提交记录的某个父提交。
+
+```shell
+git branch bugWork HEAD^^2^
+# HEAD^ -> HEAD上一个节点
+# ^2 -> 第二个父提交
+# ^ -> 上一个节点
+
+# ^ 相当于 ~1(为1时可省略)，因此也可写成
+# git branch bugWork HEAD~^2~
+```
+
+3.纠缠不清的分支
+
+```shell
 git checkout one
 git cherry-pick c4 c3 c2
 git checkout two
@@ -178,7 +198,7 @@ git branch -f three c2
 
 ### 2. 远程
 
-#### 2.1 Push & Pull —— Git 远程仓库！
+#### 2.1 Push & Pull —— Git 远程仓库
 
 1.Git Clone
 
