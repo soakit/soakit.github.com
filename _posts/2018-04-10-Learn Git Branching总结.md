@@ -5,9 +5,9 @@ title: "Learn Git Branching总结"
 tags: [Git]
 ---
 
-### 主要
+### 1. 主要
 
-#### 基础篇
+#### 1.1 基础篇
 
 1.Git Commit
 
@@ -44,7 +44,7 @@ git checkout bugFix
 git rebase master
 ```
 
-#### 高级篇
+#### 1.2 高级篇
 
 1.分离 Head
 
@@ -83,7 +83,7 @@ git checkout pushed
 git revert HEAD
 ```
 
-#### 移动提交记录
+#### 1.3 移动提交记录
 
 1.Git Cherry-pick
 
@@ -97,7 +97,7 @@ git cherry-pick c3 c5 c7
 git rebase -i HEAD~4
 ```
 
-#### 杂项
+#### 1.4 杂项
 
 1.只提取一个提交记录
 
@@ -147,19 +147,19 @@ Git Describe 能帮你在提交历史中移动了多次以后找到方向；当�
 
 git describe 的语法是：
 
-git describe <ref>
-<ref> 可以是任何能被 Git 识别成提交记录的引用，如果你没有指定的话，Git 会以你目前所检出的位置（HEAD）。
+git describe \<ref\>
+\<ref\> 可以是任何能被 Git 识别成提交记录的引用，如果你没有指定的话，Git 会以你目前所检出的位置（HEAD）。
 
 它输出的结果是这样的：
 
-<tag>\_<numCommits>\_g<hash>
+\<tag\>\_\<numCommits>\_g\<hash\>
 tag 表示的是离 ref 最近的标签， numCommits 是表示这个 ref 与 tag 相差有多少个提交记录， hash 表示的是你所给定的 ref 所表示的提交记录哈希值的前几位。
 
 当 ref 提交记录上有某个标签时，则只输出标签名称。
 
 git commit
 
-#### 高级话题
+#### 1.5 高级话题
 
 1.多次 Rebase
 
@@ -176,9 +176,9 @@ git cherry-pick c5 c4 c3 c2
 git branch -f three c2
 ```
 
-### 远程
+### 2. 远程
 
-#### Push & Pull —— Git 远程仓库！
+#### 2.1 Push & Pull —— Git 远程仓库！
 
 1.Git Clone
 
@@ -202,7 +202,7 @@ git fetch
 
 4.Git Pull
 
-git pull 就是 git fetch 和 git merge <just-fetched-branch>的缩写。
+git pull 就是 git fetch 和 git merge \<just-fetched-branch\>的缩写。
 
 ```shell
 git pull
@@ -237,7 +237,7 @@ git pull --rebase
 git push
 ```
 
-#### 关于 origin 和它的周边 —— Git 远程仓库高级操作
+#### 2.2 关于 origin 和它的周边 —— Git 远程仓库高级操作
 
 1.推送主分支
 
@@ -297,8 +297,7 @@ git fetch origin master^:foo
 git fetch origin foo:master
 git checkout foo
 git merge master
-或
-
+# 或
 git pull origin master^:foo
 git pull origin foo:master
 git branch -f foo
