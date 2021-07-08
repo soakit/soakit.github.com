@@ -21,3 +21,7 @@ footer {
 p {
 	word-break: break-all;
 }
+td, th {
+	border: 1px solid;
+	padding: 5px;
+}
