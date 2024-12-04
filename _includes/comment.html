@@ -1,21 +1,33 @@
 <!-- Gitalk 评论 start  -->
 
 <!-- Link Gitalk 的支持文件  -->
-<script src="//cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
-<link href="//cdn.bootcss.com/gitalk/1.7.2/gitalk.min.css" rel="stylesheet">
-<script src="//cdn.bootcss.com/gitalk/1.7.2/gitalk.min.js"></script>
+<script
+  crossorigin="anonymous"
+  integrity="sha384-maOfxlxBUn5LtSchBpUTZ714v7FhpJa3KsoLy6GgDAFhvGDt8Gc0nBqP8f12ng62"
+  src="//lib.baomitu.com/blueimp-md5/1.1.1/js/md5.min.js"
+></script>
+<link
+  crossorigin="anonymous"
+  integrity="sha512-0hsIlRjJbiUWaKMhXXNDmjWI2qPvUlhNBLHMhqeF5jIma+bedec27N5FoT2JEeHz5TUmOGCsm1Y89EsX/P0wOg=="
+  href="//lib.baomitu.com/gitalk/1.8.0/gitalk.min.css"
+  rel="stylesheet"
+/>
+<script
+  crossorigin="anonymous"
+  integrity="sha512-1g1xIjQM02Cut12vH/7hIwGU7/uQ3aIZI36HRYBHb4kXm24tYWVe8vWK2s14F/k38/fYVqJrGgDApbth8KGsYQ=="
+  src="//lib.baomitu.com/gitalk/1.8.0/gitalk.js"
+></script>
 <div id="gitalk-container"></div>
 <script type="text/javascript">
-	var gitalk = new Gitalk({
-		// gitalk的主要参数
-		clientID: 'a11325b33fb2a02cba05',
-		clientSecret: 'c62656a372aa56d73753e7a67f2985acb5be4f22',
-		repo: 'soakit.github.com',
-		owner: 'soakit',
-		admin: 'soakit',
-		id: md5(location.pathname)
-	});
-	gitalk.render('gitalk-container');
-
+  var gitalk = new Gitalk({
+    // gitalk的主要参数
+    clientID: "a11325b33fb2a02cba05",
+    clientSecret: "c62656a372aa56d73753e7a67f2985acb5be4f22",
+    repo: "soakit.github.com",
+    owner: "soakit",
+    admin: "soakit",
+    id: md5(location.pathname),
+  });
+  gitalk.render("gitalk-container");
 </script>
 <!-- Gitalk end -->

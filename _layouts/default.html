@@ -1,59 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ page.title }}">
-    <title>
-      {{ page.title }}
-    </title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{ page.title }}" />
+    <title>{{ page.title }}</title>
     <!-- Bootstrap Core CSS -->
-    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/monokai-sublime.min.css" rel="stylesheet">
+    <link
+      crossorigin="anonymous"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      href="//lib.baomitu.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      crossorigin="anonymous"
+      integrity="sha512-8irWeigPA1Pm20tgaynUtqbAQ/zvOizMj7Olu0sF9kQTGabFfvlAHUqhslzHwr7OZO6Z0IN6VoXAALzipXIwgA=="
+      href="//lib.baomitu.com/highlight.js/9.18.5/styles/monokai-sublime.min.css"
+      rel="stylesheet"
+    />
     <!-- Custom CSS -->
-    <link href="/css/blog.css" rel="stylesheet">
+    <link href="/css/blog.css" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media
     queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file://
     -->
     <!--[if lt IE 9]>
-      <script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
-      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+      <script crossorigin="anonymous" integrity="sha384-CLKmepoEqm+8g1zYcrHJuGaM+IiwqEjhYZpW1kQf0++07t63QBTUcWijzFM0hvOJ" src="//lib.baomitu.com/html5shiv/r29/html5.min.js"></script>
+      <script crossorigin="anonymous" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" src="//lib.baomitu.com/respond.js/1.4.2/respond.min.js"></script>
       </script>
     <![endif]-->
-    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      src="//lib.baomitu.com/jquery/1.12.4/jquery.min.js"
+    ></script>
     <!-- Bootstrap Core JavaScript -->
-    <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      src="//lib.baomitu.com/twitter-bootstrap/3.4.1/js/bootstrap.min.js"
+    ></script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha512-W8vWEBEKq60HQU2kxups8aE9ZoxO4x7YLQ+UQxbPqbO78ShB13wbXDdPF3aZDvMik4dsg/BKgvcatFU5uzk1Qw=="
+      src="//lib.baomitu.com/highlight.js/9.18.5/highlight.min.js"
+    ></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
   </head>
-  
+
   <body>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">
-              Toggle navigation
-            </span>
-            <span class="icon-bar">
-            </span>
-            <span class="icon-bar">
-            </span>
-            <span class="icon-bar">
-            </span>
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+          >
+            <span class="sr-only"> Toggle navigation </span>
+            <span class="icon-bar"> </span>
+            <span class="icon-bar"> </span>
+            <span class="icon-bar"> </span>
           </button>
-          <a class="navbar-brand" href="/index.html">
-            Soakit's Blog
-          </a>
+          <a class="navbar-brand" href="/index.html"> Soakit's Blog </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          {% include navigation.html %} 
+          {% include navigation.html %}
         </div>
         <!-- /.navbar-collapse -->
       </div>
@@ -63,54 +82,41 @@
     <div class="container">
       <div class="row">
         <!-- Blog Entries Column -->
-        <div class="col-md-8">
-          {{ content }}
-        </div>
+        <div class="col-md-8">{{ content }}</div>
         <!-- Blog Sidebar Widgets Column -->
         <div class="col-md-4">
           <!-- Blog Search Well -->
           <div class="well">
-            <h4>
-              站内搜索
-            </h4>
-            {% include search.html %} 
+            <h4>站内搜索</h4>
+            {% include search.html %}
             <!-- /.input-group -->
           </div>
           <!-- Blog Categories Well -->
           <div class="well">
-            <h4>
-              分 类
-            </h4>
-            <div class="row">
-              {% include categories.html %} 
-            </div>
+            <h4>分 类</h4>
+            <div class="row">{% include categories.html %}</div>
             <!-- /.row -->
           </div>
           <!-- Blog Links Well -->
           <div class="well">
-            <h4>
-              相关链接
-            </h4>
-            {% include links.html %} 
+            <h4>相关链接</h4>
+            {% include links.html %}
           </div>
           <!-- Side Widget Well -->
         </div>
       </div>
       <!-- /.row -->
-      <hr>
+      <hr />
       <!-- Footer -->
       <footer>
         <div class="row">
-          <div class="col-lg-12">
-            {% include copyright.html %} 
-          </div>
+          <div class="col-lg-12">{% include copyright.html %}</div>
           <!-- /.col-lg-12 -->
         </div>
         <!-- /.row -->
-		{% include analytics.html %} 
+        {% include analytics.html %}
       </footer>
     </div>
     <!-- /.container -->
   </body>
-
 </html>
