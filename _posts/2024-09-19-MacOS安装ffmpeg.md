@@ -2,7 +2,7 @@
 layout: post
 category: "ffmpeg"
 title: "MacOS安装ffmpeg"
-tags: [ffmpeg, MacOS-Software]
+tags: ["ffmpeg", "MacOS Software"]
 ---
 
 `homebrew`安装太慢了。
