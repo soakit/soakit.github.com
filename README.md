@@ -33,3 +33,9 @@ bundle exec jekyll serve
 ```shell
 gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
 ```
+
+### 清理并重新安装依赖
+```shell
+rm Gemfile.lock
+bundle install
+```
