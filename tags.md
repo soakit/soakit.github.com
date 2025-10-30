@@ -2,13 +2,20 @@
 layout: default
 title: Tags
 ---
-<div>
-{% for tag in site.tags %} 
-	<a name="{{ tag[0] }}"></a><h3>{{ tag[0] }}({{ tag[1].size }})</h3>
-	<ul>
-	{% for post in tag[1] %}
-		<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-	{% endfor %}
-	</ul>
+<ul class="list-unstyled">
+{% for tag in site.tags %}
+    <li class="{{tag[0]}}">
+      <h2>{{ tag[0] }}({{ tag[1].size }})</h2>
+      <ul class="list-unstyled">
+        {% for post in tag[1] %}
+          <li>
+            <h4>
+              <span class="btn-group" style="min-width: 108px;">{{ post.date | date_to_string }}</span> &raquo;&nbsp;&nbsp;
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </h4>
+          </li>
+	      {% endfor %}
+      </ul>
+    </li>
 {% endfor %}
-</div>
+</ul>
